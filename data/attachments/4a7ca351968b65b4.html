@@ -1,0 +1,64 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>POST: http://192.168.1.182/back-auth-service/api/v1/roles</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "id": 1778,
+    "name": "Kmdoc3WlA1d",
+    "permissions": [
+        "skill_expert"
+    ]
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJhbGciOiJSUzI1NiJ9.eyJwZXJtaXNzaW9ucyI6WyJhZG1pbl9zdXBwb3J0Iiwic2ttIiwiYXV0aF9iYXNpYyIsInNwZWNpYWxpemF0aW9uX3N1cGVydmlzb3IiLCJtYW5hZ2VfdXNlcnMiLCJza2lsbF9leHBlcnQiLCJtYW5hZ2VfdXNlcnNfcm9sZXMiLCJza2lsbF9tYW5hZ2VtZW50Il0sInVzZXJJZCI6ImY4YTEyYmNjLWQ3MTUtNDhiNS04MTE5LTlmNTExY2IyNjIyOSIsImlhdCI6MTc0MDA1ODkyNywianRpIjoiMjY3Mzc4OTYtNWZmNy00NjlkLWExZmQtNGIxZGU5ZTgzODU2IiwiZXhwIjoxNzQwMDYyNTI3fQ.Bk03VKiSYUS8wv1ZtTMpInkgIh0PHMGRaX31nWNj8mMrcQ_B-EhTWiCvqFjVIY4jll0thQhLJpbeDlloxXh6LDLK6aAN2Vej-pLqGJvsnRyKNGw_afcBJVFyE2f62jPpJUoVAXbVgC4IN-JlN6ieWauggTOR6oJ1NWz4p8BhPUTTRDb9Wpb77sr6NMOyVhKFwlvjj54ExXh-Jn3czyW7vjj70PLL7RRw1K2hFP7nWqeoyAsCi4kztca2QfP7UJjEtoRUIKglNDGhIGw_fRnOKgirZ3Vb26EpYdYYXy3AI3FTubOXNtBkNszCIEFXv3OUyuEpyUI6O-daIo6rBMbc9g</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X POST 'http://192.168.1.182/back-auth-service/api/v1/roles' -H 'Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJwZXJtaXNzaW9ucyI6WyJhZG1pbl9zdXBwb3J0Iiwic2ttIiwiYXV0aF9iYXNpYyIsInNwZWNpYWxpemF0aW9uX3N1cGVydmlzb3IiLCJtYW5hZ2VfdXNlcnMiLCJza2lsbF9leHBlcnQiLCJtYW5hZ2VfdXNlcnNfcm9sZXMiLCJza2lsbF9tYW5hZ2VtZW50Il0sInVzZXJJZCI6ImY4YTEyYmNjLWQ3MTUtNDhiNS04MTE5LTlmNTExY2IyNjIyOSIsImlhdCI6MTc0MDA1ODkyNywianRpIjoiMjY3Mzc4OTYtNWZmNy00NjlkLWExZmQtNGIxZGU5ZTgzODU2IiwiZXhwIjoxNzQwMDYyNTI3fQ.Bk03VKiSYUS8wv1ZtTMpInkgIh0PHMGRaX31nWNj8mMrcQ_B-EhTWiCvqFjVIY4jll0thQhLJpbeDlloxXh6LDLK6aAN2Vej-pLqGJvsnRyKNGw_afcBJVFyE2f62jPpJUoVAXbVgC4IN-JlN6ieWauggTOR6oJ1NWz4p8BhPUTTRDb9Wpb77sr6NMOyVhKFwlvjj54ExXh-Jn3czyW7vjj70PLL7RRw1K2hFP7nWqeoyAsCi4kztca2QfP7UJjEtoRUIKglNDGhIGw_fRnOKgirZ3Vb26EpYdYYXy3AI3FTubOXNtBkNszCIEFXv3OUyuEpyUI6O-daIo6rBMbc9g' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "id": 1778,
+    "name": "Kmdoc3WlA1d",
+    "permissions": [
+        "skill_expert"
+    ]
+}'</code></pre>
+    </div>
+</body>
+</html>

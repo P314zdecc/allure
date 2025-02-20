@@ -1,0 +1,149 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+white-space: pre-wrap;
+}
+    </style>
+</head>
+<body>
+<div><h4>Status code</h4> 
+        <pre><code><b>200</b></code></pre>
+    </div>
+
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Transfer-Encoding</b>: chunked</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Server</b>: nginx/1.23.3</code></pre>
+            </div>
+            <div>
+                <pre><code><b>X-Content-Type-Options</b>: nosniff</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Connection</b>: keep-alive</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Pragma</b>: no-cache</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Date</b>: Thu, 20 Feb 2025 13:43:37 GMT</code></pre>
+            </div>
+            <div>
+                <pre><code><b>X-Frame-Options</b>: DENY</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Cache-Control</b>: no-cache, no-store, max-age=0, must-revalidate</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Vary</b>: Access-Control-Request-Headers</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Expires</b>: 0</code></pre>
+            </div>
+            <div>
+                <pre><code><b>X-XSS-Protection</b>: 0</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "subordinates": [
+        {
+            "userId": "1e7c6f7f-b0be-4071-8d87-fea2b17d7f82",
+            "email": "oleh_chizh@senla.eu",
+            "phoneNumber": null,
+            "skype": null,
+            "name": "Oleh Chizh",
+            "avatarUrl": null,
+            "supervisorId": "aaa30802-cad5-4370-822f-134ad6b0c1b8",
+            "permissions": [
+                "skm",
+                "auth_basic"
+            ],
+            "specializationPositionId": "c36f970c-11d5-4337-94e9-0a780d6cea8c",
+            "specializationPositionName": "Team Leader",
+            "hasSkillsToReview": false
+        },
+        {
+            "userId": "c9691160-29b0-47c8-b741-df6980072ef7",
+            "email": "user.manual@senla.eu",
+            "phoneNumber": null,
+            "skype": null,
+            "name": "Manual User",
+            "avatarUrl": "http://192.168.1.86:8080/file-storage/api/rest/service/image/public/0ebec3f8-4f85-46d8-9d31-27d5333cb66d",
+            "supervisorId": "aaa30802-cad5-4370-822f-134ad6b0c1b8",
+            "permissions": [
+                "skill_expert",
+                "skm",
+                "statistic_standard",
+                "auth_basic"
+            ],
+            "specializationPositionId": "43f3250d-2f71-4ef3-a6b9-53b4719b5498",
+            "specializationPositionName": "Junior Software Testing Engineer",
+            "hasSkillsToReview": true
+        },
+        {
+            "userId": "aaa30802-cad5-4370-822f-134ad6b0c1b8",
+            "email": "teamleader.auto@senla.eu",
+            "phoneNumber": null,
+            "skype": "teamleader.auto",
+            "name": "Auto Teamleader",
+            "avatarUrl": null,
+            "supervisorId": "aaa30802-cad5-4370-822f-134ad6b0c1b8",
+            "permissions": [
+                "skill_expert",
+                "skm",
+                "manage_users",
+                "specialization_supervisor",
+                "sub_management",
+                "auth_basic",
+                "statistic_extended"
+            ],
+            "specializationPositionId": "c36f970c-11d5-4337-94e9-0a780d6cea8c",
+            "specializationPositionName": "Team Leader",
+            "hasSkillsToReview": true
+        },
+        {
+            "userId": "32fd7e60-af74-4b2c-8a7b-b171e69f7711",
+            "email": "user.auto@senla.eu",
+            "phoneNumber": null,
+            "skype": "user.auto",
+            "name": "Auto User",
+            "avatarUrl": null,
+            "supervisorId": "aaa30802-cad5-4370-822f-134ad6b0c1b8",
+            "permissions": [
+                "skill_expert",
+                "skm",
+                "auth_basic"
+            ],
+            "specializationPositionId": "f2dcf331-2d15-4b70-8b32-aa6ec6b78f1c",
+            "specializationPositionName": "Junior Software Testing Automation Engineer",
+            "hasSkillsToReview": true
+        }
+    ]
+}</code></pre>
+    </div>
+
+</body>
+</html>

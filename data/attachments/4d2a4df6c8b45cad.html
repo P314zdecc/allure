@@ -1,0 +1,60 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PUT: http://192.168.1.182/back-team-skills-tracker-service/api/v1/skills/grade/suggest/teamleader</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "userId": "2eaeebfe-9c93-4c47-8d8e-ebf41b387423",
+    "skillId": 19345,
+    "gradeId": 5
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJhbGciOiJSUzI1NiJ9.eyJwZXJtaXNzaW9ucyI6WyJzcGVjaWFsaXphdGlvbl9zdXBlcnZpc29yIiwic2ttIiwiYXV0aF9iYXNpYyIsInN1Yl9tYW5hZ2VtZW50Iiwic2tpbGxfZXhwZXJ0Iiwic3RhdGlzdGljX2V4dGVuZGVkIiwibWFuYWdlX3VzZXJzIl0sInVzZXJJZCI6ImFhYTMwODAyLWNhZDUtNDM3MC04MjJmLTEzNGFkNmIwYzFiOCIsImlhdCI6MTc0MDA1OTA0OSwianRpIjoiOTU2MTVlZmUtMGY1OC00ZTA5LWI0MDMtM2UxYjYxNTdjODY3IiwiZXhwIjoxNzQwMDYyNjQ5fQ.aPeOT9rsHw3Tl_cwic-6a-fvO43x7hG6bpZw7NMxHw6FR2UxAgMRX5Vaagn9xb32cPq3y6jJciz4TyBI_WJ_ijgVtl5KMmISIQGGL1hnKwgkpbPUWXL5zZc1_3FftkihkC9X8FTUhvBYDMf_HZ76X3zruClxP3IcH8dcET3tvq9IVop5pMXFJw2-8B2ZuwzI_RlNe5_r-XsFAopQO2KdQGLOdBxcrVs0EsKHYhjYRhoF4XPZaqZdbNpw7H_lx4wxj78IrjCXTMZEBp3dlneZimAVXBinJRNo3hjHwTKspkiS56uDUlpvJ0_K6e6nGj4Dg4dlySti7n5gCTEzhUPJIw</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PUT 'http://192.168.1.182/back-team-skills-tracker-service/api/v1/skills/grade/suggest/teamleader' -H 'Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJwZXJtaXNzaW9ucyI6WyJzcGVjaWFsaXphdGlvbl9zdXBlcnZpc29yIiwic2ttIiwiYXV0aF9iYXNpYyIsInN1Yl9tYW5hZ2VtZW50Iiwic2tpbGxfZXhwZXJ0Iiwic3RhdGlzdGljX2V4dGVuZGVkIiwibWFuYWdlX3VzZXJzIl0sInVzZXJJZCI6ImFhYTMwODAyLWNhZDUtNDM3MC04MjJmLTEzNGFkNmIwYzFiOCIsImlhdCI6MTc0MDA1OTA0OSwianRpIjoiOTU2MTVlZmUtMGY1OC00ZTA5LWI0MDMtM2UxYjYxNTdjODY3IiwiZXhwIjoxNzQwMDYyNjQ5fQ.aPeOT9rsHw3Tl_cwic-6a-fvO43x7hG6bpZw7NMxHw6FR2UxAgMRX5Vaagn9xb32cPq3y6jJciz4TyBI_WJ_ijgVtl5KMmISIQGGL1hnKwgkpbPUWXL5zZc1_3FftkihkC9X8FTUhvBYDMf_HZ76X3zruClxP3IcH8dcET3tvq9IVop5pMXFJw2-8B2ZuwzI_RlNe5_r-XsFAopQO2KdQGLOdBxcrVs0EsKHYhjYRhoF4XPZaqZdbNpw7H_lx4wxj78IrjCXTMZEBp3dlneZimAVXBinJRNo3hjHwTKspkiS56uDUlpvJ0_K6e6nGj4Dg4dlySti7n5gCTEzhUPJIw' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "userId": "2eaeebfe-9c93-4c47-8d8e-ebf41b387423",
+    "skillId": 19345,
+    "gradeId": 5
+}'</code></pre>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>POST: http://192.168.1.182/back-auth-service/api/v1/users</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>{
+    "search": "user",
+    "country": [
+        "Belarus"
+    ],
+    "office": [
+        "Gomel"
+    ],
+    "specialization": [
+        "d838a70b-5ba1-45d1-89e4-6c5cd3b00cbc"
+    ],
+    "position": [
+        "d743b500-960b-46de-a9da-c28a3e3f8a0a"
+    ],
+    "supervisor": [
+        "2eaeebfe-9c93-4c47-8d8e-ebf41b387423"
+    ],
+    "page": 0,
+    "size": 1,
+    "sort": [
+        "lastName, asc"
+    ]
+}</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJhbGciOiJSUzI1NiJ9.eyJwZXJtaXNzaW9ucyI6WyJhdXRoX2Jhc2ljIiwicmVhZF9vbmx5Il0sInVzZXJJZCI6IjQ1YzFhZTk3LWU5MjMtNDBhYy1hZDkyLTNmYWRiOGNkMjA0MyIsImlhdCI6MTc0MDA1ODkyOCwianRpIjoiOWJlMTdhY2MtNDgxNC00MmRmLWJhYTktMjhhOGU4ZDY1ZWM5IiwiZXhwIjoxNzQwMDYyNTI4fQ.jFk9Y0GRFCTtFJ0Q1IbjEJ-U1pGOFSuoak4341lAnmNwobzShqR6k94iLv8Ctcb4zCHIDpwE4nxc7a46Pu4Zjs2ipEBkbuWbEhcxBXuKBhuzuJsp-qepiKadQABjAweYwdGseO7KnjIh5tI2xf9p8rS9-peKujuhMAJxJVqGGPT-HiYHv6ki5s96Au8Crys6LLqUkzBeOaGOS9Zow-3qFTpWmON0gEOx5a2ujj5uKgFAXuFzI3EFmVix6F503D-pJmUXwZbPXc8f8UAwocAKAVJtKSQ3JOC1-u9YhpnUBBrRy8xbdGlYLsSn1Xlf6IkRLU9Q5Q06fSSNM4rrb3P-IQ</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X POST 'http://192.168.1.182/back-auth-service/api/v1/users' -H 'Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJwZXJtaXNzaW9ucyI6WyJhdXRoX2Jhc2ljIiwicmVhZF9vbmx5Il0sInVzZXJJZCI6IjQ1YzFhZTk3LWU5MjMtNDBhYy1hZDkyLTNmYWRiOGNkMjA0MyIsImlhdCI6MTc0MDA1ODkyOCwianRpIjoiOWJlMTdhY2MtNDgxNC00MmRmLWJhYTktMjhhOGU4ZDY1ZWM5IiwiZXhwIjoxNzQwMDYyNTI4fQ.jFk9Y0GRFCTtFJ0Q1IbjEJ-U1pGOFSuoak4341lAnmNwobzShqR6k94iLv8Ctcb4zCHIDpwE4nxc7a46Pu4Zjs2ipEBkbuWbEhcxBXuKBhuzuJsp-qepiKadQABjAweYwdGseO7KnjIh5tI2xf9p8rS9-peKujuhMAJxJVqGGPT-HiYHv6ki5s96Au8Crys6LLqUkzBeOaGOS9Zow-3qFTpWmON0gEOx5a2ujj5uKgFAXuFzI3EFmVix6F503D-pJmUXwZbPXc8f8UAwocAKAVJtKSQ3JOC1-u9YhpnUBBrRy8xbdGlYLsSn1Xlf6IkRLU9Q5Q06fSSNM4rrb3P-IQ' -H 'Accept: */*' -H 'Content-Type: application/json' -d '{
+    "search": "user",
+    "country": [
+        "Belarus"
+    ],
+    "office": [
+        "Gomel"
+    ],
+    "specialization": [
+        "d838a70b-5ba1-45d1-89e4-6c5cd3b00cbc"
+    ],
+    "position": [
+        "d743b500-960b-46de-a9da-c28a3e3f8a0a"
+    ],
+    "supervisor": [
+        "2eaeebfe-9c93-4c47-8d8e-ebf41b387423"
+    ],
+    "page": 0,
+    "size": 1,
+    "sort": [
+        "lastName, asc"
+    ]
+}'</code></pre>
+    </div>
+</body>
+</html>

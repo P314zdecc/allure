@@ -1,0 +1,72 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>PATCH: http://192.168.1.182/back-team-skills-tracker-service/api/v1/experts/skill</code></pre>
+</div>
+
+    <h4>Body</h4>
+    <div>
+        <pre><code>[
+    {
+        "skillId": 25,
+        "experts": [
+            "32fd7e60-af74-4b2c-8a7b-b171e69f7711"
+        ]
+    }
+]</code></pre>
+    </div>
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJhbGciOiJSUzI1NiJ9.eyJwZXJtaXNzaW9ucyI6WyJhZG1pbl9zdXBwb3J0Iiwic2ttIiwiYXV0aF9iYXNpYyIsInNwZWNpYWxpemF0aW9uX3N1cGVydmlzb3IiLCJtYW5hZ2VfdXNlcnMiLCJza2lsbF9leHBlcnQiLCJtYW5hZ2VfdXNlcnNfcm9sZXMiLCJza2lsbF9tYW5hZ2VtZW50Il0sInVzZXJJZCI6ImY4YTEyYmNjLWQ3MTUtNDhiNS04MTE5LTlmNTExY2IyNjIyOSIsImlhdCI6MTc0MDA1OTA0OSwianRpIjoiNmZlMTFmNjktMWQ0Ni00Yzg5LTk1NTUtMGY4MjQ1Nzg3OTVjIiwiZXhwIjoxNzQwMDYyNjQ5fQ.Qx0-ZEP_009U8mFhVyzPlBqmJIx99Ri6hNIFc39yNwwk2ebNWBLlCjtRfWcdgP6h9Bzu_s7Nwi0hZdkY_Y7UNpe7Vxwreiouvqwh085rfYRQjdO3KWsRovqVmpFpfW85VFuhWGyz8ej249EOC2AASwI2v1TBxuNyC6plGNgqgILGv_t4tCxP6SCIee7N7dsu2_EmpzHQQ27b3k1aGRC_YBQ8Ke4PZZKUltt1xcojZ91fEdVUrLuO9NXffbmEuoHLLgvPU5qa1dQBlNNvJPPXFLc67hWiwLHFgsDZnBIi07BlVUVXu6N38s3u_Z7Q-fftok5OaiuecYoRta8WH9F6-w</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/json</code></pre>
+            </div>
+    </div>
+
+
+    <h4>Cookies</h4>
+    <div>
+            <div>
+                <pre><code><b>portalToken</b>: eyJhbGciOiJIUzI1NiJ9.eyJncm91cHMiOlsiR2xvYmFsIiwib2ZmaWNlLUdvbWVsIiwicG9ydGFsLXVzZXJzIiwic2ttLWFkbWluIl0sImV4cCI6MTc0MDE0NTQ1NiwidXNlcm5hbWUiOiJzdXBwb3J0LmF1dG9Ac2VubGEuZXUifQ._RYqvW60z2ya21dxNd366Yg1igEha0cNrG8dYu_tonE</code></pre>
+            </div>
+    </div>
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X PATCH 'http://192.168.1.182/back-team-skills-tracker-service/api/v1/experts/skill' -H 'Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJwZXJtaXNzaW9ucyI6WyJhZG1pbl9zdXBwb3J0Iiwic2ttIiwiYXV0aF9iYXNpYyIsInNwZWNpYWxpemF0aW9uX3N1cGVydmlzb3IiLCJtYW5hZ2VfdXNlcnMiLCJza2lsbF9leHBlcnQiLCJtYW5hZ2VfdXNlcnNfcm9sZXMiLCJza2lsbF9tYW5hZ2VtZW50Il0sInVzZXJJZCI6ImY4YTEyYmNjLWQ3MTUtNDhiNS04MTE5LTlmNTExY2IyNjIyOSIsImlhdCI6MTc0MDA1OTA0OSwianRpIjoiNmZlMTFmNjktMWQ0Ni00Yzg5LTk1NTUtMGY4MjQ1Nzg3OTVjIiwiZXhwIjoxNzQwMDYyNjQ5fQ.Qx0-ZEP_009U8mFhVyzPlBqmJIx99Ri6hNIFc39yNwwk2ebNWBLlCjtRfWcdgP6h9Bzu_s7Nwi0hZdkY_Y7UNpe7Vxwreiouvqwh085rfYRQjdO3KWsRovqVmpFpfW85VFuhWGyz8ej249EOC2AASwI2v1TBxuNyC6plGNgqgILGv_t4tCxP6SCIee7N7dsu2_EmpzHQQ27b3k1aGRC_YBQ8Ke4PZZKUltt1xcojZ91fEdVUrLuO9NXffbmEuoHLLgvPU5qa1dQBlNNvJPPXFLc67hWiwLHFgsDZnBIi07BlVUVXu6N38s3u_Z7Q-fftok5OaiuecYoRta8WH9F6-w' -H 'Accept: */*' -H 'Content-Type: application/json' -b 'portalToken=eyJhbGciOiJIUzI1NiJ9.eyJncm91cHMiOlsiR2xvYmFsIiwib2ZmaWNlLUdvbWVsIiwicG9ydGFsLXVzZXJzIiwic2ttLWFkbWluIl0sImV4cCI6MTc0MDE0NTQ1NiwidXNlcm5hbWUiOiJzdXBwb3J0LmF1dG9Ac2VubGEuZXUifQ._RYqvW60z2ya21dxNd366Yg1igEha0cNrG8dYu_tonE' -d '[
+    {
+        "skillId": 25,
+        "experts": [
+            "32fd7e60-af74-4b2c-8a7b-b171e69f7711"
+        ]
+    }
+]'</code></pre>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset = UTF-8">
+    <script src="https://yastatic.net/jquery/2.2.3/jquery.min.js" crossorigin="anonymous"></script>
+
+    <link href="https://yastatic.net/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://yastatic.net/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <link type="text/css" href="https://yandex.st/highlightjs/8.0/styles/github.min.css" rel="stylesheet"/>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/bash.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/json.min.js"></script>
+    <script type="text/javascript" src="https://yandex.st/highlightjs/8.0/languages/xml.min.js"></script>
+    <script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+    <style>
+        pre {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <pre><code>POST: http://192.168.1.182/back-team-skills-tracker-service/api/v1/skills/reaction?contentId=26&reactionType=LIKE</code></pre>
+</div>
+
+
+    <h4>Headers</h4>
+    <div>
+            <div>
+                <pre><code><b>Authorization</b>: Bearer eyJhbGciOiJSUzI1NiJ9.eyJwZXJtaXNzaW9ucyI6WyJza2lsbF9leHBlcnQiLCJhdXRoX2Jhc2ljIiwic2ttIl0sInVzZXJJZCI6IjMyZmQ3ZTYwLWFmNzQtNGIyYy04YTdiLWIxNzFlNjlmNzcxMSIsImlhdCI6MTc0MDA1ODkyOCwianRpIjoiZmY4ZmQzNDEtOTk0Mi00OGU5LTlhYzktNWRiNGI1YjU0MDlkIiwiZXhwIjoxNzQwMDYyNTI4fQ.I8n7k9qCambY4jGARo8uecxgqYYtGF-y5ESYygMfcLXTIRoiSGvq1JLvPPzW5O2S_9aK0JwhFqdt9bvjs3uFNNczytqt4GL79UhTAcPeTEIgVHX3QdhH0pOiK4OKhCCd8IVZ72eIM7opVn9mcwJcagFhZEOtRg990HN_os_eJmvk6pMD5AB7Tc0mcGLmM6_teg-wwrilpSTmilgHxg44qF2DXM_Gz1d1ouKjtLbZGszHjLa2rjReKE-TJkh7-YrflxJYEvKxjrsZJQ1K5FTFc787HT578iTZl84AT2LCgdGdfKHmtwy_K8JHbjzB9e3UxrNMwnr-kaIvNx47-Dr-PA</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Accept</b>: */*</code></pre>
+            </div>
+            <div>
+                <pre><code><b>Content-Type</b>: application/x-www-form-urlencoded; charset=ISO-8859-1</code></pre>
+            </div>
+    </div>
+
+
+
+    <h4>Curl</h4>
+    <div>
+        <pre><code>curl -v -X POST 'http://192.168.1.182/back-team-skills-tracker-service/api/v1/skills/reaction?contentId=26&reactionType=LIKE' -H 'Authorization: Bearer eyJhbGciOiJSUzI1NiJ9.eyJwZXJtaXNzaW9ucyI6WyJza2lsbF9leHBlcnQiLCJhdXRoX2Jhc2ljIiwic2ttIl0sInVzZXJJZCI6IjMyZmQ3ZTYwLWFmNzQtNGIyYy04YTdiLWIxNzFlNjlmNzcxMSIsImlhdCI6MTc0MDA1ODkyOCwianRpIjoiZmY4ZmQzNDEtOTk0Mi00OGU5LTlhYzktNWRiNGI1YjU0MDlkIiwiZXhwIjoxNzQwMDYyNTI4fQ.I8n7k9qCambY4jGARo8uecxgqYYtGF-y5ESYygMfcLXTIRoiSGvq1JLvPPzW5O2S_9aK0JwhFqdt9bvjs3uFNNczytqt4GL79UhTAcPeTEIgVHX3QdhH0pOiK4OKhCCd8IVZ72eIM7opVn9mcwJcagFhZEOtRg990HN_os_eJmvk6pMD5AB7Tc0mcGLmM6_teg-wwrilpSTmilgHxg44qF2DXM_Gz1d1ouKjtLbZGszHjLa2rjReKE-TJkh7-YrflxJYEvKxjrsZJQ1K5FTFc787HT578iTZl84AT2LCgdGdfKHmtwy_K8JHbjzB9e3UxrNMwnr-kaIvNx47-Dr-PA' -H 'Accept: */*' -H 'Content-Type: application/x-www-form-urlencoded; charset=ISO-8859-1'</code></pre>
+    </div>
+</body>
+</html>
